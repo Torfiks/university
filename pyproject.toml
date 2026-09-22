@@ -1,0 +1,23 @@
+[project]
+name = "university"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "roma", email = "Top007fe@yandex.ru" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "ipykernel>=7.3.0",
+    "matplotlib>=3.11.1",
+    "opencv-python>=5.0.0.93",
+    "pandas>=3.0.5",
+    "pandas-stubs~=3.0.5",
+]
+
+[project.scripts]
+university = "university:main"
+
+[build-system]
+requires = ["uv_build>=0.12.0,<0.13.0"]
+build-backend = "uv_build"
